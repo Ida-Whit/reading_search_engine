@@ -26,7 +26,7 @@ const typeDefs = `
     }
 
     type Mutation {
-        login(email: String!, password: String!): Auth
+        login(email: String!, password_id: String!): Auth
         addUser(username: String!, email: String!, password: String!): Auth
         saveBook(authors: [String!], description: String!, title: String!, bookId: ID!, image: String, link: String): User
         removeBook(bookID: ID!):User
