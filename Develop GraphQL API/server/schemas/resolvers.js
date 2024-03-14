@@ -33,7 +33,7 @@ const resolvers = {
 
             if(!correctPw) {
                 throw AuthenticationError;
-            }
+            };
 
             const token = signToken(user);
             return { token, user };
@@ -51,7 +51,7 @@ const resolvers = {
                     }
                 )
                 .populate("books");
-                return updateUser;
+                return updatedUser;
             }
             throw AuthenticationError;
         },
